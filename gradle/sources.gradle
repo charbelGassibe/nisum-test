@@ -1,0 +1,14 @@
+sourceSets {
+}
+
+compileJava {
+    setSourceCompatibility('17')
+    setTargetCompatibility('17')
+}
+
+spotless {
+    java {
+        removeUnusedImports()
+        googleJavaFormat(googleJavaFormatVer)
+    }
+}

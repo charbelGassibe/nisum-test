@@ -1,0 +1,19 @@
+{
+  "id": null,
+  "name": "JuanRodriguez",
+  "email": "juan@rodriguez.orga",
+  "password": "1947ChPa!",
+  "phones": [
+    {
+      "id": null,
+      "number": "1234567",
+      "citycode": "1",
+      "countrycode": "57"
+    }
+  ],
+  "created": null,
+  "modified": null,
+  "lastLogin": null,
+  "token": null,
+  "active": false
+}

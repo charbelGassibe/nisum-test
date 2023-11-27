@@ -1,0 +1,13 @@
+format: clean
+	./gradlew spotlessApply
+
+clean:
+	./gradlew clean
+
+build: format
+	./gradlew bootJar
+
+run:
+	./gradlew bootRun
+
+

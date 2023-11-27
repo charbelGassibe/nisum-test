@@ -1,0 +1,30 @@
+buildscript {
+	ext{
+		springBootVersion = '3.2.0'
+		SpringDepVersion = '1.1.4'
+		googleJavaFormatVer = '1.10.0'
+		openApiVersion = '2.2.0'
+		jBcryptVersion = '0.4'
+		spotlessVer = '6.21.0'
+	}
+}
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version "${springBootVersion}"
+	id 'io.spring.dependency-management' version "${SpringDepVersion}"
+	id "com.diffplug.spotless" version "${spotlessVer}"
+}
+
+group = 'cl.charbel'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+	mavenCentral()
+}
+
+apply from: 'gradle/dependencies.gradle'
+apply from: 'gradle/sources.gradle'
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
